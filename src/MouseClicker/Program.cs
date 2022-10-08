@@ -62,7 +62,7 @@ namespace MouseClicker
         private static bool CheckClick()
         {
             // Was middle mouse button clicked?
-            short status = GetAsyncKeyState((int)Keys.MButton);
+            short status = GetAsyncKeyState((int)MouseButtons.XButton1);
             
             return status == -32767 || status == -32768;
         }
