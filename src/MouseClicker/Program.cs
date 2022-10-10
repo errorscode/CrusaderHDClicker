@@ -61,7 +61,7 @@ namespace MouseClicker
 
         private static bool CheckClick()
         {
-            // Was middle mouse button clicked?
+            // Was Left Conrtol Key Pressed?
             short status = GetAsyncKeyState((int)Keys.LControlKey);
             
             return status == -32767 || status == -32768;
